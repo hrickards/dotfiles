@@ -1,0 +1,4 @@
+[beets]
+directory: ~/music
+library: ~/.musiclibrary.blb
+import_move: yes

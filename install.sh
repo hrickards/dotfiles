@@ -8,7 +8,7 @@
 ########## Variables
 
 dir=~/dotfiles                       # dotfiles directory
-files="vimrc vim bashrc"                    # list of files/folders to symlink in homedir
+files="vimrc vim bashrc beetsconfig"                    # list of files/folders to symlink in homedir
 
 ##########
 
