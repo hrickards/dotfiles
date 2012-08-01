@@ -7,8 +7,9 @@
 
 ########## Variables
 
-dir=~/dotfiles                       # dotfiles directory
-files="vimrc vim bashrc beetsconfig tmux.conf"                    # list of files/folders to symlink in homedir
+dir=~/dotfiles
+files="vimrc vim bashrc beetsconfig tmux.conf"
+x_files="Xdefaults"
 
 ##########
 
@@ -16,6 +17,10 @@ files="vimrc vim bashrc beetsconfig tmux.conf"                    # list of file
 echo "Changing to the $dir directory"
 cd $dir
 echo "...done"
+
+if [ $1 = '--with-x' ]; then
+  files="$files $x_files"
+fi
 
 # create symlinks 
 for file in $files; do
