@@ -21,6 +21,10 @@ EDITOR=vim
 CWNAME=Pheme
 CWDIR=$HOME/code/$CWNAME
 
+if [ "$TERM" = "rxvt-unicode-256color" ]; then
+  TERM="rxvt-256color"
+fi
+
 # ack | less, but coloured
 alias ackl='ACK_PAGER_COLOR="less -x4SRFX" ack'
 
