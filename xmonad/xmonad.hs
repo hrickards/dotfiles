@@ -83,7 +83,7 @@ myManageHook    = composeAll
 myKeys (XConfig {modMask = modm}) = M.fromList $
     [ ((modm, xK_x), spawn "xlock")
     , ((modm, xK_u), spawn "urxvt")
-    , ((modm, xK_v), spawn "urxvt -e $HOME/bin/cw_vim")
+    , ((modm, xK_v), spawn "urxvt -e /home/harry/bin/cw_vim")
     , ((modm, xK_p), spawn "eval \"exec `yeganesh -x -- -fn 'xft:inconsolata:pixelsize=14'`\"") ]
 
 myScreenWidth   = 1366
@@ -91,6 +91,6 @@ myStatusWidth   = 850
 myXmonadWidth   = myScreenWidth - myStatusWidth
 
 myXmonadBar     = "dzen2 -x '0' -y '0' -h '20' -w '" ++ show myXmonadWidth ++ "' -ta 'l' -fg '#FFFFFF' -bg '#1B1D1E' -fn 'xft:inconsolata:pixelsize=14'"
-myStatusBar     = "$HOME/bin/conky_ifnot -c $HOME/.xmonad/conky | dzen2 -x '" ++ show myXmonadWidth ++ "' -y '0' -w '" ++ show myStatusWidth ++ "' -h '20' -ta 'r' -bg '#1B1D1E' -fg '#FFFFFF' -fn 'xft:inconsolata:pixelsize=14'"
+myStatusBar     = "/home/harry/bin/conky_ifnot -c /home/harry/.xmonad/conky | dzen2 -x '" ++ show myXmonadWidth ++ "' -y '0' -w '" ++ show myStatusWidth ++ "' -h '20' -ta 'r' -bg '#1B1D1E' -fg '#FFFFFF' -fn 'xft:inconsolata:pixelsize=14'"
 
-myBitmapsDir    = "$HOME/.xmonad/images"
+myBitmapsDir    = "/home/harry/.xmonad/images"
