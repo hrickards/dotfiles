@@ -1,0 +1,38 @@
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+
+# Run system-wide tasks
+if [ -d /etc/X11/xinit/xinitrc.d ]; then
+  for f in /etc/X11/xinit/xinitrc.d/*; do
+    [ -x "$f" ] && . "$f"
+  done
+  unset f
+fi
+
+# Set the location of the gtk2 config file explicitly
+export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
+
+# Start dropbox, a compositing manager and bind keys
+dropboxd &
+xbindkeys
+xcompmgr &
+
+# Ensure xft fonts are available for use
+xset +fp /usr/share/fonts/local
+xset fp rehash
+
+# Set the cursor and keyboard map
+xsetroot -cursor_name left_ptr
+setxkbmap -layout gb
+
+# Run Xdefaults (colours, fonts, etc)
+xrdb -merge .Xdefaults
+
+# Set the wallpaper
+feh --bg-center /home/harry/wallpaper.png
+
+# Start xmonad
+xmonad
