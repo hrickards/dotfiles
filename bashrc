@@ -33,6 +33,7 @@ alias gst='git status'
 alias gc='git commit'
 alias ga='git add'
 alias gp='git push'
+alias gd='git diff'
 
 # Go to current working directory (see $CWNAME and $CWDIR above)
 alias cw='cd $CWDIR'
