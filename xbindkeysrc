@@ -1,0 +1,24 @@
+# Increase volume
+"$HOME/bin/increase_volume"
+    m:0x8 + c:111
+    Alt + Up
+
+# Decrease volume
+"$HOME/bin/decrease_volume"
+    m:0x8 + c:116
+    Alt + Down
+
+# Play/pause
+"mpc toggle"
+    m:0x0 + c:172
+    XF86AudioPlay
+
+# Skip to previous track
+"mpc prev"
+    m:0x0 + c:173
+    XF86AudioPrev
+
+# Skip to next track
+"mpc next"
+    m:0x0 + c:171
+    XF86AudioNext

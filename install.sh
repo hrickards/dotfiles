@@ -9,7 +9,7 @@
 
 dir=~/dotfiles
 files="vimrc vim bashrc beetsconfig tmux.conf"
-x_files="Xdefaults xinitrc"
+x_files="Xdefaults xinitrc xbindkeysrc"
 
 ##########
 
