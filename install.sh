@@ -9,7 +9,7 @@
 
 dir=~/dotfiles
 files="vimrc vim bashrc beetsconfig tmux.conf"
-x_files="Xdefaults xinitrc xbindkeysrc"
+x_files="Xdefaults xinitrc xbindkeysrc xmonad"
 
 ##########
 
@@ -18,7 +18,7 @@ echo "Changing to the $dir directory"
 cd $dir
 echo "...done"
 
-if [ $1 = '--with-x' ]; then
+if [ "$1" = '--with-x' ]; then
   files="$files $x_files"
 fi
 
