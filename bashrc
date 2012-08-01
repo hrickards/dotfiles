@@ -28,6 +28,7 @@ alias ackl='ACK_PAGER_COLOR="less -x4SRFX" ack'
 alias gst='git status'
 alias gc='git commit'
 alias ga='git add'
+alias gp='git push'
 
 # Go to current working directory (see $CWNAME and $CWDIR above)
 alias cw='cd $CWDIR'
