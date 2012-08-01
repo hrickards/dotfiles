@@ -49,7 +49,7 @@ Bundle 'ruby-matchit'
 
 " Add support for user-defined text objects, and ruby block text objects
 Bundle 'kana/vim-textobj-user'
-Bundle 'nelstrom/vim-textobj-user-rubyblock'
+Bundle 'nelstrom/vim-textobj-rubyblock'
 
 " Fancy nl stuff with words
 Bundle 'tpope/vim-abolish'
