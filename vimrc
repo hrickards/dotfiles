@@ -22,7 +22,7 @@ Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-bundler'
 Bundle 'groenewege/vim-less'
-Bundle 'skammer/vim-css-color'
+Bundle 'ap/vim-css-color'
 Bundle 'hail2u/vim-css3-syntax'
 syntax enable
 au! BufRead,BufNewFile *.erb          setfiletype eruby
