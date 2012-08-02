@@ -28,6 +28,9 @@ syntax enable
 au! BufRead,BufNewFile *.erb          setfiletype eruby
 au! BufRead,BufNewFile *.haml         setfiletype haml
 
+" Write HTML faster
+Bundle 'tristen/vim-sparkup'
+
 " File tree
 Bundle 'scrooloose/nerdtree'
 
