@@ -60,6 +60,10 @@ Bundle 'nelstrom/vim-textobj-rubyblock'
 " Fancy nl stuff with words
 Bundle 'tpope/vim-abolish'
 
+" Plugin for visualising undo tree
+Bundle 'sjl/gundo.vim'
+nnoremap <F5> :GundoToggle<CR>
+
 " We want to load plugin + indent files
 filetype plugin indent on
 
