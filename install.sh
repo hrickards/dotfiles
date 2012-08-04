@@ -1,19 +1,21 @@
 #!/bin/bash
 ############################
 # install.sh
-# This script creates symlinks from the home directory to any desired dotfiles in ~/dotfiles
+# This script creates symlinks from the home directory to any desired dotfiles in ~/homefiles
 # Based upon michaeljsmalley's
 ############################
 
 ########## Variables
 
-dir=~/dotfiles
+dir=~/homefiles
 files="vimrc vim bashrc beetsconfig tmux.conf"
 x_files="Xdefaults xinitrc xbindkeysrc xmonad"
+code_repos_file="coderepos"
+code_repos_dir=~/code/
 
 ##########
 
-# change to the dotfiles directory
+# change to the homefiles directory
 echo "Changing to the $dir directory"
 cd $dir
 echo "...done"
@@ -32,3 +34,13 @@ done
 
 # Run vundle
 vim +BundleInstall +qall
+
+##########
+old_dir=`pwd`
+cd $code_repos_dir
+while read line
+do
+  echo "Cloning $line"
+  git clone $line
+done < "$dir/$code_repos_file"
+cd $old_dir
