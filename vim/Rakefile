@@ -1,0 +1,7 @@
+require '../elegant_move.rb'
+
+task :default do
+  elegant_move 'vim/vimrc', '.vimrc'
+  elegant_move 'vim/vim', '.vim'
+  system 'vim +BundleInstall +qall'
+end

@@ -1,0 +1,6 @@
+require '../elegant_move.rb'
+
+task :default do
+  elegant_move 'misc/beetsconfig', '.beetsconfig'
+  elegant_move 'misc/tmux.conf', '.tmux.conf'
+end
