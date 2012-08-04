@@ -64,6 +64,9 @@ Bundle 'tpope/vim-abolish'
 Bundle 'sjl/gundo.vim'
 nnoremap <F5> :GundoToggle<CR>
 
+" Searching (ack = grep replacement)
+Bundle 'mileszs/ack.vim'
+
 " We want to load plugin + indent files
 filetype plugin indent on
 
