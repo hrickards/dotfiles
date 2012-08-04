@@ -178,3 +178,6 @@ nnoremap <leader>d :NERDTreeToggle<cr>
 " Tab complete when opening files with :e
 set wildmode=longest,list,full
 set wildmenu
+
+" Split a line with one keystroke
+:nnoremap K i<CR><Esc>
