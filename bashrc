@@ -14,8 +14,9 @@ PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
 # Add RVM and the bin directoryto path
 PATH=$PATH:$HOME/.rvm/bin:$HOME/bin
 
-# Set default editor
+# Set default editor and alias vi to it
 EDITOR=vim
+alias vi=$EDITOR
 
 # Variables for current working (as in project, not pwd) directory
 CWNAME=Pheme
