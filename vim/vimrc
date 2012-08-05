@@ -68,6 +68,10 @@ nnoremap <F5> :GundoToggle<CR>
 " Searching (ack = grep replacement)
 Bundle 'mileszs/ack.vim'
 
+" Aligning text
+Bundle 'godlygeek/tabular'
+Bundle 'quentindecock/vim-cucumber-align-pipes'
+
 " We want to load plugin + indent files
 filetype plugin indent on
 
