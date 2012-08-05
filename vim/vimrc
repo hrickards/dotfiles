@@ -24,6 +24,7 @@ Bundle 'tpope/vim-bundler'
 Bundle 'groenewege/vim-less'
 Bundle 'ap/vim-css-color'
 Bundle 'hail2u/vim-css3-syntax'
+Bundle 'kchmck/vim-coffee-script'
 syntax enable
 au! BufRead,BufNewFile *.erb          setfiletype eruby
 au! BufRead,BufNewFile *.haml         setfiletype haml
