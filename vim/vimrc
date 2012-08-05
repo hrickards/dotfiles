@@ -72,6 +72,9 @@ Bundle 'mileszs/ack.vim'
 Bundle 'godlygeek/tabular'
 Bundle 'quentindecock/vim-cucumber-align-pipes'
 
+" Git
+Bundle 'tpope/vim-fugitive'
+
 " We want to load plugin + indent files
 filetype plugin indent on
 
