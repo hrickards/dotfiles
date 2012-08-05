@@ -26,8 +26,8 @@ Bundle 'ap/vim-css-color'
 Bundle 'hail2u/vim-css3-syntax'
 Bundle 'kchmck/vim-coffee-script'
 syntax enable
-au! BufRead,BufNewFile *.erb          setfiletype eruby
-au! BufRead,BufNewFile *.haml         setfiletype haml
+au! BufRead,BufNewFile *.erb setfiletype eruby
+au! BufRead,BufNewFile *.haml setfiletype haml
 
 " Open files
 Bundle 'wincent/Command-T'
