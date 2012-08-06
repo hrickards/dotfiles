@@ -19,7 +19,7 @@ EDITOR=vim
 alias vi=$EDITOR
 
 # Variables for current working (as in project, not pwd) directory
-CWNAME=Pheme
+CWNAME=yrs2012
 CWDIR=$HOME/code/$CWNAME
 
 if [ "$TERM" = "rxvt-unicode-256color" ]; then
