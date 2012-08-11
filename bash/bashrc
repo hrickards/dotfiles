@@ -12,11 +12,14 @@ alias ls='ls --color'
 PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
 
 # Add RVM and the bin directoryto path
-PATH=$PATH:$HOME/.rvm/bin:$HOME/bin
+PATH=$PATH:$HOME/.rvm/bin:$HOME/bin:/opt/SenchaSDKTools-2.0.0-beta3:/opt/SenchaArchitect
 
 # Set default editor and alias vi to it
 EDITOR=vim
 alias vi=$EDITOR
+
+# Sencha (mobile dev)
+export SENCHA_SDK_TOOLS_2_0_0_BETA3="/opt/SenchaSDKTools-2.0.0-beta3"
 
 # Variables for current working (as in project, not pwd) directory
 CWNAME=yrs2012
