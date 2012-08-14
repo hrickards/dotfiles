@@ -192,3 +192,6 @@ set wildmenu
 
 " Split a line with one keystroke
 :nnoremap K i<CR><Esc>
+
+" Update CommandT file listings after creating a new file
+au BufNewFile * CommandTFlush
