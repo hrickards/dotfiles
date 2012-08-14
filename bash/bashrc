@@ -22,8 +22,9 @@ alias vi=$EDITOR
 export SENCHA_SDK_TOOLS_2_0_0_BETA3="/opt/SenchaSDKTools-2.0.0-beta3"
 
 # Variables for current working (as in project, not pwd) directory
-CWNAME=yrs2012
-CWDIR=$HOME/code/$CWNAME
+#CWNAME=yrs2012_backend
+#CWDIR=$HOME/code/$CWNAME
+CWDIR=$HOME/code
 
 if [ "$TERM" = "rxvt-unicode-256color" ]; then
   TERM="rxvt-256color"
@@ -53,3 +54,7 @@ alias s="rerun -- rackup config.ru -o `ifconfig | grep "inet " | awk ' { if ($2 
 
 # fixes problems with muscle memory and singular commands
 alias beets=beet
+
+# rjb
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$JAVA_HOME/jre/lib/amd64:$JAVA_HOME/jre/lib/amd64/client
+
