@@ -160,7 +160,9 @@ set showmatch
 set hlsearch
 
 " When <F2> is pressed, disable indenting, etc
+" And reverse this when leaving insert mode
 set pastetoggle=<F2>
+au InsertLeave * set nopaste
 
 " Remap <F1> to <ESC> to stop accidental opening of help
 inoremap <F1> <ESC>
