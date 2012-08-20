@@ -22,9 +22,8 @@ alias vi=$EDITOR
 export SENCHA_SDK_TOOLS_2_0_0_BETA3="/opt/SenchaSDKTools-2.0.0-beta3"
 
 # Variables for current working (as in project, not pwd) directory
-#CWNAME=yrs2012_backend
-#CWDIR=$HOME/code/$CWNAME
-CWDIR=$HOME/code
+CWNAME=verdandi
+CWDIR=$HOME/code/$CWNAME
 
 if [ "$TERM" = "rxvt-unicode-256color" ]; then
   TERM="rxvt-256color"
