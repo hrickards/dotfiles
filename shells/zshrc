@@ -1,0 +1,37 @@
+# Skip all this for non-interactive shells
+[[ -z "$PS1" ]] && return
+
+# Editors
+export EDITOR="vim"
+export USE_EDITOR=$EDITOR
+export VISUAL=$EDITOR
+
+# Options
+export REPORTTIME=30
+setopt rm_star_wait auto_continue noclobber no_bg_nice autocd correct no_flow_control no_beep appendhistory nomatch notify
+bindkey -v
+
+# Autocompletion
+zstyle :compinstall filename '/home/harry/.zshrc'
+autoload -Uz compinit
+compinit
+
+# Aliases
+alias ls='ls --color'
+alias gst='git status'
+alias gc='git commit'
+alias ga='git add'
+alias gp='git push'
+alias gl='git log'
+alias gd='git diff'
+alias hp='git push heroku master'
+alias bi='bundle install'
+alias bu='bundle update'
+alias be='bundle exec'
+alias gi='gem install'
+alias sus='sudo pm-suspend'
+alias fon='sudo rc.d start thinkfan'
+alias foff='sudo rc.d stop thinkfan'
+alias f6='sudo rc.d stop thinkfan; fan6'
+alias nh='sudo netcfg -r home'
+

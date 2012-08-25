@@ -1,5 +1,0 @@
-require '../elegant_move.rb'
-
-task :default do
-  elegant_move 'bash/bashrc', '.bashrc'
-end
