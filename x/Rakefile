@@ -3,6 +3,7 @@ require '../elegant_move.rb'
 task :default do
   elegant_move 'x/xbindkeysrc', '.xbindkeysrc'
   elegant_move 'x/Xdefaults', '.Xdefaults'
+  elegant_move 'x/Xresources', '.Xresources'
   elegant_move 'x/xinitrc', '.xinitrc'
   elegant_move 'x/xmonad', '.xmonad'
 end

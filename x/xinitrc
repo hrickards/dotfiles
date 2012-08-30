@@ -30,6 +30,7 @@ setxkbmap -layout gb
 
 # Run Xdefaults (colours, fonts, etc)
 xrdb -merge .Xdefaults
+xrdb -merge .Xresources
 
 # Set the wallpaper
 feh --bg-center /home/harry/wallpaper.png
