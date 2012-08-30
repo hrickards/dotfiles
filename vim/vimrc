@@ -9,7 +9,8 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " Require all other bundles using vundle and set them up
-Bundle 'molokai'
+"Bundle 'molokai'
+Bundle "altercation/vim-colors-solarized"
 
 " Syntax highlighting/indenting, along with some other niceties
 Bundle 'tpope/vim-cucumber'
@@ -81,7 +82,8 @@ Bundle 'tpope/vim-fugitive'
 filetype plugin indent on
 
 " Enable the colourscheme
-colorscheme molokai
+set background=dark
+colorscheme solarized
 
 " Enables 256 colors
 set t_Co=256
