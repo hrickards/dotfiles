@@ -2,4 +2,5 @@ require '../elegant_move.rb'
 
 task :default do
   elegant_move 'shells/bashrc', '.bashrc'
+  elegant_move 'shells/zshrc', '.zshrc'
 end
