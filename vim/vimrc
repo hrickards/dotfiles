@@ -9,7 +9,6 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " Require all other bundles using vundle and set them up
-"Bundle 'molokai'
 Bundle "altercation/vim-colors-solarized"
 
 " Syntax highlighting/indenting, along with some other niceties
@@ -17,12 +16,10 @@ Bundle 'tpope/vim-cucumber'
 Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-liquid'
 Bundle 'pangloss/vim-javascript'
-"Bundle 'plasticboy/vim-markdown'
 Bundle 'silky/vim-pandoc'
 Bundle 'eruby.vim'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'
-Bundle 'tpope/vim-bundler'
 Bundle 'groenewege/vim-less'
 Bundle 'ap/vim-css-color'
 Bundle 'hail2u/vim-css3-syntax'
@@ -34,9 +31,6 @@ au! BufRead,BufNewFile *.haml setfiletype haml
 
 " Open files
 Bundle 'wincent/Command-T'
-
-" Write HTML faster
-Bundle 'tristen/vim-sparkup'
 
 " File tree
 Bundle 'scrooloose/nerdtree'
