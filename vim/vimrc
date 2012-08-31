@@ -195,3 +195,6 @@ set wildmenu
 
 " Update CommandT file listings after creating a new file
 au BufNewFile * CommandTFlush
+
+" Update ruby path for RVM (supposedly leads to faster load times)
+let g:ruby_path = system('rvm current')
