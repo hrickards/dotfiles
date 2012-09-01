@@ -4,4 +4,5 @@ task :default do
   elegant_move 'misc/beetsconfig', '.beetsconfig'
   elegant_move 'misc/tmux.conf', '.tmux.conf'
   elegant_move 'misc/ackrc', '.ackrc'
+  elegant_move 'misc/latexmkrc', '.latexmkrc'
 end
