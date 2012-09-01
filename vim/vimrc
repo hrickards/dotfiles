@@ -95,9 +95,9 @@ set shiftwidth=2
 set softtabstop=2
 
 " Apart from in python, where it should be 4
-autocmd filetype python set tabstop=4
-autocmd filetype python set shiftwidth=4
-autocmd filetype python set softtabstop=4
+autocmd filetype python setlocal tabstop=4
+autocmd filetype python setlocal shiftwidth=4
+autocmd filetype python setlocal softtabstop=4
 
 " Turn tabs into spaces
 set expandtab
