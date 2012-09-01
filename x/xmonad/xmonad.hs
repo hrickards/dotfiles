@@ -38,15 +38,12 @@ myNormalBorderColor = "#dddddd"
 myFocusedBorderColor = "#ff0000"
 
 myWorkspaces    = [ "1:web", "2:code", "3:fun"
-                  , "4:music", "5:config", "6:video"
+                  , "4:music", "5:config", "6:notes"
                   , "7:special"]
 
 myStartupHook   = setWMName "LG3D"
 
-myLayoutHook    = onWorkspace "4:music" musicLayout $ defaultLayouts
-
-{-musicLayout     = (smartBorders . avoidStruts) $ gaps [(R,320)] Full-}
-musicLayout     = defaultLayouts
+myLayoutHook    = defaultLayouts
 
 defaultLayouts  = (smartBorders . avoidStruts) $ tiled ||| Mirror tiled ||| Full ||| spiral spiralRatio ||| Mirror (spiral spiralRatio)
     where
