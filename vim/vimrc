@@ -72,6 +72,10 @@ Bundle 'quentindecock/vim-cucumber-align-pipes'
 " Git
 Bundle 'tpope/vim-fugitive'
 
+" LaTeX
+Bundle 'LaTeX-Box-Team/LaTeX-Box'
+Bundle 'hrickards/vim-latex-dict'
+
 " Supertab autocompletion
 Bundle 'ervandew/supertab'
 
@@ -204,3 +208,21 @@ let g:ruby_path = system('rvm current')
 
 " Autocompletion settings (lets supertab use omnicompletion where appropriate)
 let g:SuperTabDefaultCompletionType = "context"
+
+" LaTeX file detection
+augroup filetypedetect
+  au! BufRead,BufNewFile *.cls setfiletype tex
+  au! BufRead,BufNewFile *.lco setfiletype tex
+augroup END
+
+" LaTeX settings
+let g:tex_flavor ='latex'
+let g:LatexBox_latexmk_options = "-pvc -pdf"
+let g:tex_comment_nospell = 1
+let g:LatexBox_viewer = 'evince'
+autocmd filetype tex setlocal spell spelllang=en_gb
+
+" LaTeX autocomplete
+autocmd filetype tex setlocal dictionary+=$HOME/.vim/bundle/vim-latex-dict/dict/dictionary
+autocmd filetype tex setlocal dictionary+=$HOME/.vim/bundle/vim-latex-dict/dict/SIunits
+setlocal complete+=k
