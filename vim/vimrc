@@ -72,6 +72,9 @@ Bundle 'quentindecock/vim-cucumber-align-pipes'
 " Git
 Bundle 'tpope/vim-fugitive'
 
+" Supertab autocompletion
+Bundle 'ervandew/supertab'
+
 " We want to load plugin + indent files
 filetype plugin indent on
 
@@ -198,3 +201,6 @@ au BufNewFile * CommandTFlush
 
 " Update ruby path for RVM (supposedly leads to faster load times)
 let g:ruby_path = system('rvm current')
+
+" Autocompletion settings (lets supertab use omnicompletion where appropriate)
+let g:SuperTabDefaultCompletionType = "context"
