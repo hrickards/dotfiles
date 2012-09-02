@@ -44,11 +44,14 @@ alias sus='sudo pm-suspend; echo "Probably a good idea to run fon now"'
 alias fon='sudo rc.d start thinkfan'
 alias foff='sudo rc.d stop thinkfan'
 alias f6='sudo rc.d stop thinkfan; fan6'
+alias f7='sudo rc.d stop thinkfan; fan7'
 alias nh='sudo netcfg -r home'
 alias pacman='pacman-color'
 alias pacsyu='sudo pacman -Syu'
 alias pacs='sudo pacman -S'
 alias pacr='sudo pacman -R'
+alias vv='cd "$HOME/dotfiles" && vim vim/vimrc'
+alias vz='cd "$HOME/dotfiles" && vim shells/zshrc'
 
 # Prompt
 export PROMPT="%~ %% "
