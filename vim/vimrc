@@ -226,3 +226,7 @@ autocmd filetype tex setlocal spell spelllang=en_gb
 autocmd filetype tex setlocal dictionary+=$HOME/.vim/bundle/vim-latex-dict/dict/dictionary
 autocmd filetype tex setlocal dictionary+=$HOME/.vim/bundle/vim-latex-dict/dict/SIunits
 setlocal complete+=k
+
+" Ampersand tabularisation
+nmap <Leader>a :Tabularize /&<CR>
+vmap <Leader>a :Tabularize /&<CR>
